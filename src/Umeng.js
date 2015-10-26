@@ -36,7 +36,7 @@ var Umeng = class Umeng{
     this._aliseType = option.aliseType;
     this._iosAliseType = option.iosAliseType;
     this._androidAliseType = option.androidAliseType;
-    this._productionMode = option.productionMode || 'false';
+    this._productionMode = option.production_mode || 'false';
 
     if(this._platform === 'ios') {
       this._prepareIOS();
@@ -53,7 +53,6 @@ var Umeng = class Umeng{
     notification.send(cb);
   }
   _prepareUpload(upload, info, cb) {
-    upload.setAppMasterSecret(this._appMasterSecret);
     var data = upload.getData();
     data.appkey = this._appKey;
     data.production_mode = this._productionMode;

@@ -54,7 +54,6 @@ var Notification = class Notification {
     // solve issure: http://bbs.umeng.com/thread-6928-1-1.html
     var data = JSON.stringify(this._data);
     data = nativeConvertAscii(data);
-    console.log(data);
     var uri = this._host + this._postPath;
     var sign = _sign('POST' + uri + data + this._appMasterSecret);
     request({
