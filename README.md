@@ -84,20 +84,20 @@ customizedcast推送未完全
 			"error_code": "xx" //错误码详见官方附录I。
 		}
 	}
-### Request callback(引用自官方)	
-{
-  "ret":"SUCCESS/FAIL", // 返回结果，"SUCCESS"或者"FAIL"
-  "data": 
-    {
-      // 当"ret"为"SUCCESS"时,包含如下参数:
-          // 当type为unicast、listcast或者customizedcast且alias不为空时:
-          "msg_id":"xx" 
-          // 当type为于broadcast、groupcast、filecast、customizedcast
-          且file_id不为空的情况(任务)
-          "task_id":"xx"
-
-      // 当"ret"为"FAIL"时,包含如下参数:
-      "error_code":"xx" // 错误码详见官方附录I。
-    }  
-}
+### Request callback(引用自官方)
+	
+	{
+		"ret":"SUCCESS/FAIL", // 返回结果，"SUCCESS"或者"FAIL"
+		"data": 
+		{
+		// 当"ret"为"SUCCESS"时,包含如下参数:
+        // 当type为unicast、listcast或者customizedcast且alias不为空时:
+        "msg_id":"xx" 
+        // 当type为于broadcast、groupcast、filecast、customizedcast
+        且file_id不为空的情况(任务)
+        "task_id":"xx"
+		// 当"ret"为"FAIL"时,包含如下参数:
+		"error_code":"xx" // 错误码详见官方附录I。
+		}  
+	}
 
