@@ -5,6 +5,7 @@ Using ES6
 
 ## Usage
 详细接口描述在官方文档 http://dev.umeng.com/push/android/api-doc#2
+customizedcast推送未完全
 ### Android Example
 **ATTENTION** 对照官方文档在info内添加自己所需要的信息,所提供为必须字段
 
@@ -58,6 +59,7 @@ Using ES6
     });
 ### fileUpload
 **文件上传接口**
+
 	var Umeng = require('UmengNode');
 	var file = new Umeng();
 	file.initialize({
