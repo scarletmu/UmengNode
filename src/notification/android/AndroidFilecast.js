@@ -8,6 +8,7 @@ var AndroidFilecast = class AndroidFilecast extends AndroidNotification{
   constructor(){
     super();
 
+    this._data['type'] = 'filecast';
     this._data['file_id'] = '';
   }
 };

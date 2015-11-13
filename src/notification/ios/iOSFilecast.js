@@ -8,6 +8,7 @@ var iOSFilecast = class iOSFilecast extends iOSNotification{
   constructor(){
     super();
 
+    this._data['type'] = 'filecast';
     this._data['file_id'] = '';
   }
 };
