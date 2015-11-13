@@ -53,6 +53,7 @@ var Umeng = class Umeng{
     notification.send(cb);
   }
   _prepareUpload(upload, info, cb) {
+    upload.setAppMasterSecret(this._appMasterSecret);
     var data = upload.getData();
     data.appkey = this._appKey;
     data.production_mode = this._productionMode;
